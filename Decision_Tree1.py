@@ -21,3 +21,11 @@ def createDataSet():
                [0, 1, 'no']]
     labels = ['no surfacing', 'flippers']
     return dataSet, labels
+def splitDataSet(dataSet, axis, value):
+    retDataSet=  []
+    for featvect in dataSet:
+        if featvect[axis] == value:
+            ReducedFeatVect = featvect[:axis]
+            ReducedFeatVect.extend(featvect[axis+1:])#提出没有featvext[axis]=value 的featvect
+            retDataSet.append(ReducedFeatVect)
+    return retDataSet
