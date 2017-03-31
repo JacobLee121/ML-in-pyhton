@@ -13,3 +13,8 @@ print(entropy)
 [[1, 1, 'yes'], [1, 1, 'yes'], [1, 0, 'no'], [0, 1, 'no'], [0, 1, 'no']]
 ['no surfacing', 'flippers']
 0.9709505944546686
+[in]
+splitDataSet = Decision_Tree1.splitDataSet(myDat,1,1)
+print(splitDataSet)
+[out]
+[[1, 'yes'], [1, 'yes'], [0, 'no'], [0, 'no']]
