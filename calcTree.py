@@ -18,3 +18,7 @@ splitDataSet = Decision_Tree1.splitDataSet(myDat,1,1)
 print(splitDataSet)
 [out]
 [[1, 'yes'], [1, 'yes'], [0, 'no'], [0, 'no']]
+
+bestFeature,subData = Decision_Tree1.chooseBestFeatureToSplitData(myDat)
+print(bestFeature,subData)
+print(myDat)
